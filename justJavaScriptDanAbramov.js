@@ -148,7 +148,7 @@ console.log(answer.opposite);
 
 // let null = 10;
 // console.log(null);
-*/
+
 
 // 1. a variable without any declaration and no assignment
 // console.log(variable); // output is "ReferenceError: variable is not defined"
@@ -184,6 +184,26 @@ console.log(Number.MAX_SAFE_INTEGER + 2);
 console.log(Number.MAX_SAFE_INTEGER + 3);
 console.log(Number.MAX_SAFE_INTEGER + 4);
 console.log(Number.MAX_SAFE_INTEGER + 5);
+
+*/
+
+// NaN, Infinity, -Infinity, -0
+// NaN stands for invalid math, not a valid number, but its type is a number
+
+
+console.log("1/0 = "  + 1/0);
+console.log("0/0 = " +  0/0);
+console.log("0/1 = " +  0/1);
+let c= -1/0;
+console.log("-1/0 = " + c);
+console.log("1/-Infinity = " + 1/c);
+
+
+//  1/0 = Infinity
+//  0/0 = NaN
+//  0/1 = 0
+// -1/0 = -Infinity
+// 1/-infinity = 0
 
 
 
