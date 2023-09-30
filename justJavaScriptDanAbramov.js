@@ -185,7 +185,6 @@ console.log(Number.MAX_SAFE_INTEGER + 3);
 console.log(Number.MAX_SAFE_INTEGER + 4);
 console.log(Number.MAX_SAFE_INTEGER + 5);
 
-*/
 
 // NaN, Infinity, -Infinity, -0
 // NaN stands for invalid math, not a valid number, but its type is a number
@@ -205,6 +204,44 @@ console.log("1/-Infinity = " + 1/c);
 // -1/0 = -Infinity
 // 1/-infinity = 0
 
+
+*/
+
+// Objects and Functions
+// [] Square brackets for arrays and {} braces for objects
+// {object} [array]
+
+let schoolObject = {
+    name: 'Vivekanand School',
+    location: 'Delhi',
+    established: 1971,
+    studentArray: [
+        { name: 'Alice', grade: 'A' },
+        { name: 'Bob', grade: 'B' },
+        { name: 'Carol', grade: 'C'}
+    ],
+    displayInfo: function() {
+        console.log(`${this.name} was established in ${this.established} at ${this.location}`);
+        this.studentArray.forEach( s => {
+            // console.log(`Student $(studentArray.name) has grade $(studentArray.grade).`);
+            // console.log(`Student ${studentArray.name} has grade ${studentArray.grade}.`);
+            console.log(`Student ${s.name} has grade ${s.grade}.`);
+        })
+    }
+}
+
+// console.log(schoolObject.studentArray.displayInfo);
+// console.log(schoolObject.studentArray.displayInfo());
+// console.log(schoolObject.displayInfo);
+console.log(schoolObject.displayInfo());
+// The console.log() function in JavaScript does not return a value, 
+// it just outputs the value to the console. 
+// So when you’re using console.log(schoolObject.displayInfo());, 
+// it’s trying to log the return value of schoolObject.displayInfo(). 
+// But since displayInfo() does not return a value (it just logs to the console), 
+// undefined is returned, and that’s what gets logged by your console.log() statement.
+// If you want to avoid seeing undefined, you can simply call the function without using console.log()
+schoolObject.displayInfo();
 
 
 
